@@ -23,21 +23,20 @@ def exercise2(displayname):
 
 exercise2('Charlie')
 ################################
+arr0 = []
 def get_people(team):
-    arr = []
+   
     from data2 import people
     for x in people:
-        if x.displayname == team:
-            for t in x.members:
-                if t.is_team:
-                    for e in t.members:
-                        arr.append(e.displayname)
-                else:
-                    arr.append(t.displayname)
-    print('get_people('+team+ '): ',arr)
-    
-get_people('The C-Team')
+            if x.displayname == team:
+                for t in x.members:
+                    if not t.is_team and t.displayname not in arr0: ## no dups
+                        arr0.append(t.displayname)
+                    else:
+                        get_people(t.displayname)
 
+get_people('The C-Team')
+print('get_people(): ',arr0)
 ###############################
 arrs = [] 
 def get_members(members):
@@ -54,4 +53,4 @@ def get_members(members):
             return
         
 get_members("The C-Team")
-print('get_members:', arrs)
+print('get_members()', arrs)
