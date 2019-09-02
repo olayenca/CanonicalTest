@@ -1,18 +1,20 @@
-{  
-   "name":"coding-assignment-master",
-   "version":"1.0.0",
-   "description":"Canonical Test",
-   "main":"index.js",
-   "scripts":{  
-      "start":"node index.js"
+{
+   "name": "coding-assignment-master",
+   "version": "1.0.0",
+   "description": "Canonical Test",
+   "main": "index.js",
+   "scripts": {
+      "start": "node index.js"
    },
-   "dependencies":{  
-      "@babel/register":"7.5.5"
+   "repository": {
+      "type": "git",
+      "url": "https://www.github.com/olayenca/CanonicalTest"
    },
-   "repository":{  
-      "type":"git",
-      "url":"https://www.github.com/olayenca/CanonicalTest"
-   },
-   "author":"Olayinka Otuniyi",
-   "license":"ISC"
+   "author": "Olayinka Otuniyi",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/core": "^7.5.5",
+      "@babel/preset-env": "^7.5.5",
+      "@babel/register": "^7.5.5"
+   }
 }
