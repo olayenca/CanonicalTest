@@ -1,7 +1,7 @@
 # CanonicalTest
 Code Test completed in Python and Javascript
 
-###For JS  💻: 
+### For JS  💻: 
 ##### Prerequisites : Node
 
 $ npm install
